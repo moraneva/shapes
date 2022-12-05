@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<aside class="fixed z-10 top-0 left-0 pb-3 px-6 flex flex-col justify-between h-screen border-r bg-white w-200">
+    <form action="https://formbold.com/s/FORM_ID" method="POST">
+        <div class="-mx-6 px-6 py-4 text-2xl">
+            <a href="#" title="home">
+                Shapes
+            </a>
+        </div>
+        <div class="mb-5">
+            <label for="width" class="mb-3 block text-base font-medium text-[#07074D]">
+                Width
+            </label>
+            <input type="number" name="width" id="width" placeholder="Width"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-1 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+        </div>
+        <div class="mb-5">
+            <label for="height" class="mb-3 block text-base font-medium text-[#07074D]">
+                Height
+            </label>
+            <input type="number" name="height" id="height" placeholder="Height"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-1 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+        </div>
+        <div class="mb-5">
+            <label for="iterations" class="mb-3 block text-base font-medium text-[#07074D]">
+                Iterations
+            </label>
+            <input type="number" name="iterations" id="iterations" placeholder="Iterations"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-1 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+        </div>
+        <div class="mb-5">
+            <label for="angle" class="mb-3 block text-base font-medium text-[#07074D]">
+                Angle Function
+            </label>
+            <input type="text" name="angle" id="angle" placeholder="Angle Function"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-1 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+        </div>
+        <div class="mb-5">
+            <label for="r" class="mb-3 block text-base font-medium text-[#07074D]">
+                Color Function - R
+            </label>
+            <input type="text" name="r" id="r" placeholder="Color Function - R"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-1 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+        </div>
+        <div class="mb-5">
+            <label for="g" class="mb-3 block text-base font-medium text-[#07074D]">
+                Color Function - G
+            </label>
+            <input type="text" name="g" id="g" placeholder="Color Function - G"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-1 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+        </div>
+        <div class="mb-5">
+            <label for="b" class="mb-3 block text-base font-medium text-[#07074D]">
+                Color Function - B
+            </label>
+            <input type="text" name="b" id="b" placeholder="Color Function - B"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-1 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+        </div>
+
+        <div>
+            <button type="submit"
+                class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none">
+                Render
+            </button>
+        </div>
+    </form>
+</aside>
+<!-- <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
+
+</div> -->
+{% endblock %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shapes</title>
+</head>
+
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+
+    <header class="main">
+        <div class="notice-wrapper">
+            {% with messages = get_flashed_messages() %}
+            {% for message in messages %}
+            <div class="show notice error notice-error">
+                <span class="notice-message">{{ message }}</span>
+            </div>
+            {% endfor %}
+            {% endwith %}
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+</body>
+
+</html>
